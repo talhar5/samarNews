@@ -17,7 +17,6 @@ const getNews = () => {
                     </div>
                 </div>`;
       elem.innerHTML = html;
-      console.log("onprogress");
     };
     xhr.onload = function () {
       if (this.status === 200) {
@@ -34,7 +33,6 @@ const getNews = () => {
 };
 getNews()
   .then((response) => {
-    console.log(response);
     let elem = document.getElementById("accordionNews");
     let html = "";
 
