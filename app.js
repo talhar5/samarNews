@@ -63,5 +63,8 @@ getNews()
     elem.innerHTML = html;
   })
   .catch((error) => {
-    console.log(error);
+    console.log(error.statusText);
+    let elem = document.getElementById("accordionNews");
+    let html = "We are sorry, some error has occured.";
+    elem.innerHTML = html;
   });
