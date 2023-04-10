@@ -1,5 +1,3 @@
-const key = "7df22815d3bc4c8383deb0068fd38254";
-
 const getNews = () => {
   return new Promise((resolve, reject) => {
     const xhr = new XMLHttpRequest();
