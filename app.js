@@ -17,7 +17,7 @@ const getNews = () => {
       elem.innerHTML = html;
     };
     xhr.onload = function () {
-      if (this.status === 200) {
+      if (this.status === 200 && this.status === 426) {
         resolve(JSON.parse(this.responseText));
       } else {
         reject({
